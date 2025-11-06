@@ -2315,6 +2315,571 @@ const level2HSECapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for HR & Organization - Attraction & Recruiting
+const level3AttractionRecruitingCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'recruiting-sourcing-selection-1',
+    name: 'Recruiting, Sourcing & Selection',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'attraction-recruiting',
+    description: 'Recruiting, sourcing, and selecting candidates for positions'
+  },
+  {
+    id: 'recruiting-sourcing-selection-2',
+    name: 'Recruiting, Sourcing & Selection ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'attraction-recruiting',
+    description: 'Additional aspects of recruiting, sourcing, and selecting candidates'
+  }
+];
+
+// Level 3 capabilities for HR & Organization - Employee Relations
+const level3EmployeeRelationsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'employee-communication-1',
+    name: 'Employee Communication',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employee-relations',
+    description: 'Communicating with employees effectively'
+  },
+  {
+    id: 'employee-communication-2',
+    name: 'Employee Communication ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employee-relations',
+    description: 'Additional aspects of communicating with employees'
+  },
+  {
+    id: 'employee-support-services-1',
+    name: 'Employee Support Services',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employee-relations',
+    description: 'Providing support services to employees'
+  },
+  {
+    id: 'employee-support-services-2',
+    name: 'Employee Support Services ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employee-relations',
+    description: 'Additional aspects of providing support services to employees'
+  }
+];
+
+// Level 3 capabilities for HR & Organization - Employer Proposition
+const level3EmployerPropositionCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'retention-1',
+    name: 'Retention',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Retaining valuable employees'
+  },
+  {
+    id: 'retention-2',
+    name: 'Retention ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Additional aspects of retaining valuable employees'
+  },
+  {
+    id: 'retirement-1',
+    name: 'Retirement',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Managing employee retirement processes'
+  },
+  {
+    id: 'retirement-2',
+    name: 'Retirement ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Additional aspects of managing employee retirement processes'
+  },
+  {
+    id: 'reward-1',
+    name: 'Reward',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Rewarding employees for performance and contributions'
+  },
+  {
+    id: 'reward-2',
+    name: 'Reward ',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'employer-proposition',
+    description: 'Additional aspects of rewarding employees'
+  }
+];
+
+// Level 3 capabilities for HR & Organization - Learning
+const level3LearningCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'knowledge-management',
+    name: 'Knowledge Management',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'learning',
+    description: 'Managing organizational knowledge and facilitating knowledge sharing'
+  }
+];
+
+// Level 3 capabilities for HR & Organization - Talent Development & Performance
+const level3TalentDevelopmentPerformanceCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'employee-orientation-deployment',
+    name: 'Employee Orientation & Deployment',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'talent-development-performance',
+    description: 'Orienting new employees and deploying them effectively'
+  },
+  {
+    id: 'employee-performance-development',
+    name: 'Employee Performance & Development',
+    level: 3,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'talent-development-performance',
+    description: 'Managing employee performance and development'
+  }
+];
+
+// Level 2 capabilities for HR & Organization
+const level2HROrganizationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'attraction-recruiting',
+    name: 'Attraction & Recruiting',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Attracting and recruiting talent',
+    children: level3AttractionRecruitingCapabilities
+  },
+  {
+    id: 'contingent-workforce-management',
+    name: 'Contingent Workforce Management',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Managing contingent workforce',
+    children: []
+  },
+  {
+    id: 'employee-relations',
+    name: 'Employee Relations',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Managing relationships with employees',
+    children: level3EmployeeRelationsCapabilities
+  },
+  {
+    id: 'employer-proposition',
+    name: 'Employer Proposition',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Developing and maintaining employer value proposition',
+    children: level3EmployerPropositionCapabilities
+  },
+  {
+    id: 'learning',
+    name: 'Learning',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Providing learning opportunities for employees',
+    children: level3LearningCapabilities
+  },
+  {
+    id: 'talent-development-performance',
+    name: 'Talent Development & Performance',
+    level: 2,
+    category: 'core',
+    domain: 'HR',
+    parentId: 'hr-organization',
+    description: 'Developing talent and managing performance',
+    children: level3TalentDevelopmentPerformanceCapabilities
+  }
+];
+
+// Level 3 capabilities for BPM & Intelligent Automation
+const level3BPMIntelligentAutomationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'business-process-management',
+    name: 'Business Process Management',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'bpm-intelligent-automation',
+    description: 'Managing and optimizing business processes'
+  },
+  {
+    id: 'business-process-management-2',
+    name: 'Business Process Management ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'bpm-intelligent-automation',
+    description: 'Additional aspects of managing and optimizing business processes'
+  },
+  {
+    id: 'intelligent-automation',
+    name: 'Intelligent Automation',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'bpm-intelligent-automation',
+    description: 'Automating processes using intelligent technologies'
+  }
+];
+
+// Level 3 capabilities for Integration
+const level3IntegrationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'application-integration',
+    name: 'Application Integration',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'integration',
+    description: 'Integrating applications to work together seamlessly'
+  },
+  {
+    id: 'general-integration',
+    name: 'General Integration',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'integration',
+    description: 'General integration capabilities and services'
+  }
+];
+
+// Level 3 capabilities for IoT & VR/AR Services
+const level3IoTVRARCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'iot-devices',
+    name: 'IOT Devices',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'iot-vrar-services',
+    description: 'Managing and utilizing IoT devices'
+  },
+  {
+    id: 'iot-devices-2',
+    name: 'IOT Devices ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'iot-vrar-services',
+    description: 'Additional aspects of managing and utilizing IoT devices'
+  },
+  {
+    id: 'iot-platforms',
+    name: 'IoT Platforms',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'iot-vrar-services',
+    description: 'Managing and utilizing IoT platforms'
+  },
+  {
+    id: 'iot-platforms-2',
+    name: 'IoT Platforms ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'iot-vrar-services',
+    description: 'Additional aspects of managing and utilizing IoT platforms'
+  },
+  {
+    id: 'vrar-services',
+    name: 'VR/AR Services',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'iot-vrar-services',
+    description: 'Providing virtual reality and augmented reality services'
+  }
+];
+
+// Level 3 capabilities for IT Infrastructure Management
+const level3ITInfrastructureManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'hardware-infrastructure',
+    name: 'Hardware Infrastructure',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Managing hardware infrastructure components'
+  },
+  {
+    id: 'hardware-infrastructure-2',
+    name: 'Hardware Infrastructure ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Additional aspects of managing hardware infrastructure'
+  },
+  {
+    id: 'network-infrastructure',
+    name: 'Network Infrastructure',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Managing network infrastructure components'
+  },
+  {
+    id: 'virtual-infrastructure',
+    name: 'Virtual Infrastructure',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Managing virtual infrastructure components'
+  },
+  {
+    id: 'workplace',
+    name: 'Workplace',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Managing workplace IT infrastructure'
+  },
+  {
+    id: 'workplace-2',
+    name: 'Workplace ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-infrastructure-management',
+    description: 'Additional aspects of managing workplace IT infrastructure'
+  }
+];
+
+// Level 3 capabilities for IT Operations & Development
+const level3ITOperationsDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'development',
+    name: 'Development ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-operations-development',
+    description: 'Developing software and applications'
+  },
+  {
+    id: 'operations',
+    name: 'Operations',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-operations-development',
+    description: 'Managing IT operations'
+  },
+  {
+    id: 'operations-2',
+    name: 'Operations ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-operations-development',
+    description: 'Additional aspects of managing IT operations'
+  }
+];
+
+// Level 3 capabilities for IT Security
+const level3ITSecurityCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'data-security-privacy',
+    name: 'Data Security & Privacy',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-security',
+    description: 'Securing data and ensuring privacy'
+  },
+  {
+    id: 'identity-access-management',
+    name: 'Identity & Access Management',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-security',
+    description: 'Managing identities and access to systems'
+  },
+  {
+    id: 'threat-vulnerability-management',
+    name: 'Threat & vulnerability Management',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-security',
+    description: 'Managing threats and vulnerabilities to IT systems'
+  }
+];
+
+// Level 3 capabilities for Network & Compute
+const level3NetworkComputeCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'compute',
+    name: 'Compute',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'network-compute',
+    description: 'Managing compute resources'
+  },
+  {
+    id: 'compute-2',
+    name: 'Compute ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'network-compute',
+    description: 'Additional aspects of managing compute resources'
+  },
+  {
+    id: 'network',
+    name: 'Network',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'network-compute',
+    description: 'Managing network resources'
+  },
+  {
+    id: 'network-2',
+    name: 'Network ',
+    level: 3,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'network-compute',
+    description: 'Additional aspects of managing network resources'
+  }
+];
+
+// Level 2 capabilities for IT/Enabling Technology
+const level2ITEnablingTechnologyCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'bpm-intelligent-automation',
+    name: 'BPM & Intelligent Automation',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Managing business processes and intelligent automation',
+    children: level3BPMIntelligentAutomationCapabilities
+  },
+  {
+    id: 'gxp-system-lifecycle-management',
+    name: 'GxP System Life Cycle Management',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Managing the lifecycle of GxP systems',
+    children: []
+  },
+  {
+    id: 'integration',
+    name: 'Integration',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Integrating systems and applications',
+    children: level3IntegrationCapabilities
+  },
+  {
+    id: 'iot-vrar-services',
+    name: 'IoT & VR/AR Services',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Providing IoT and VR/AR services',
+    children: level3IoTVRARCapabilities
+  },
+  {
+    id: 'it-infrastructure-management',
+    name: 'IT Infrastructure Management',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Managing IT infrastructure',
+    children: level3ITInfrastructureManagementCapabilities
+  },
+  {
+    id: 'it-operations-development',
+    name: 'IT Operations & Development',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Managing IT operations and development',
+    children: level3ITOperationsDevelopmentCapabilities
+  },
+  {
+    id: 'it-security',
+    name: 'IT Security',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Ensuring IT security',
+    children: level3ITSecurityCapabilities
+  },
+  {
+    id: 'network-compute',
+    name: 'Network & Compute',
+    level: 2,
+    category: 'core',
+    domain: 'IT',
+    parentId: 'it-enabling-technology',
+    description: 'Managing network and compute resources',
+    children: level3NetworkComputeCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -2414,7 +2979,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'HR',
     description: 'Capabilities related to human resources and organizational management',
-    children: []
+    children: level2HROrganizationCapabilities
   },
   {
     id: 'it-enabling-technology',
@@ -2423,7 +2988,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'IT',
     description: 'Capabilities related to information technology and enabling technologies',
-    children: []
+    children: level2ITEnablingTechnologyCapabilities
   },
   {
     id: 'law-patents-compliance',
