@@ -2880,6 +2880,247 @@ const level2ITEnablingTechnologyCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for Compliance & Data Privacy
+const level3ComplianceDataPrivacyCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'data-privacy',
+    name: 'Data Privacy',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Ensuring compliance with data privacy regulations and protecting personal data'
+  },
+  {
+    id: 'financial-compliance-management',
+    name: 'Financial Compliance Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Managing compliance with financial regulations and standards'
+  },
+  {
+    id: 'global-trade-compliance-management-1',
+    name: 'Global Trade Compliance Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Managing compliance with global trade regulations and requirements'
+  },
+  {
+    id: 'global-trade-compliance-management-2',
+    name: 'Global Trade Compliance Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Additional aspects of managing compliance with global trade regulations'
+  },
+  {
+    id: 'regulatory-management-1',
+    name: 'Regulatory Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Managing compliance with regulatory requirements across industries'
+  },
+  {
+    id: 'regulatory-management-2',
+    name: 'Regulatory Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Additional aspects of managing regulatory compliance'
+  },
+  {
+    id: 'services-compliance-management',
+    name: 'Services Compliance Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'compliance-data-privacy',
+    description: 'Managing compliance for services and service delivery'
+  }
+];
+
+// Level 3 capabilities for Intellectual Property
+const level3IntellectualPropertyCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'copyright-trademark-management',
+    name: 'Copyright &Trademark Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'intellectual-property',
+    description: 'Managing copyrights and trademarks to protect intellectual property'
+  },
+  {
+    id: 'patent-management',
+    name: 'Patent Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'intellectual-property',
+    description: 'Managing patents and patent applications'
+  }
+];
+
+// Level 3 capabilities for Legal Affairs
+const level3LegalAffairsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'business-conduct-management-1',
+    name: 'Business Conduct Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Managing business conduct and ethics'
+  },
+  {
+    id: 'business-conduct-management-2',
+    name: 'Business Conduct Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Additional aspects of managing business conduct and ethics'
+  },
+  {
+    id: 'contract-management-1',
+    name: 'Contract Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Managing contracts throughout their lifecycle'
+  },
+  {
+    id: 'contract-management-2',
+    name: 'Contract Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Additional aspects of managing contracts'
+  },
+  {
+    id: 'corporate-law-management-1',
+    name: 'Corporate Law Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Managing corporate legal matters and compliance'
+  },
+  {
+    id: 'corporate-law-management-2',
+    name: 'Corporate Law Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Additional aspects of managing corporate legal matters'
+  },
+  {
+    id: 'litigation-management-1',
+    name: 'Litigation Management',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Managing litigation and legal disputes'
+  },
+  {
+    id: 'litigation-management-2',
+    name: 'Litigation Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'legal-affairs',
+    description: 'Additional aspects of managing litigation and legal disputes'
+  }
+];
+
+// Level 3 capabilities for Risk Management
+const level3RiskManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'risk-mitigation',
+    name: 'Risk Mitigation',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'risk-management',
+    description: 'Implementing strategies to mitigate identified risks'
+  },
+  {
+    id: 'risk-transparency',
+    name: 'Risk Transparency',
+    level: 3,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'risk-management',
+    description: 'Ensuring transparency in risk identification and management'
+  }
+];
+
+// Level 2 capabilities for Law, Patents & Compliance
+const level2LawPatentsComplianceCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'compliance-data-privacy',
+    name: 'Compliance & Data Privacy',
+    level: 2,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'law-patents-compliance',
+    description: 'Ensuring compliance with regulations and protecting data privacy',
+    children: level3ComplianceDataPrivacyCapabilities
+  },
+  {
+    id: 'insurance-management',
+    name: 'Insurance Management',
+    level: 2,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'law-patents-compliance',
+    description: 'Managing insurance policies and claims',
+    children: []
+  },
+  {
+    id: 'intellectual-property',
+    name: 'Intellectual Property',
+    level: 2,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'law-patents-compliance',
+    description: 'Managing intellectual property assets including patents, trademarks, and copyrights',
+    children: level3IntellectualPropertyCapabilities
+  },
+  {
+    id: 'legal-affairs',
+    name: 'Legal Affairs',
+    level: 2,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'law-patents-compliance',
+    description: 'Managing legal matters and providing legal counsel',
+    children: level3LegalAffairsCapabilities
+  },
+  {
+    id: 'risk-management',
+    name: 'Risk Management',
+    level: 2,
+    category: 'core',
+    domain: 'Legal',
+    parentId: 'law-patents-compliance',
+    description: 'Identifying, assessing, and managing risks',
+    children: level3RiskManagementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -2997,7 +3238,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Legal',
     description: 'Capabilities related to legal matters, patents, and compliance',
-    children: []
+    children: level2LawPatentsComplianceCapabilities
   },
   {
     id: 'location-facility-engineering-asset-management',
