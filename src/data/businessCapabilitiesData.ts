@@ -3121,6 +3121,352 @@ const level2LawPatentsComplianceCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for Asset Performance Management
+const level3AssetPerformanceManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'asset-criticality-management',
+    name: 'Asset Criticality Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'asset-performance-management',
+    description: 'Managing and prioritizing assets based on their criticality to operations'
+  },
+  {
+    id: 'asset-health-management',
+    name: 'Asset Health Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'asset-performance-management',
+    description: 'Monitoring and managing the health and condition of assets'
+  },
+  {
+    id: 'asset-strategy-management',
+    name: 'Asset Strategy Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'asset-performance-management',
+    description: 'Developing and implementing strategies for asset management'
+  },
+  {
+    id: 'mechanical-integrity-management',
+    name: 'Mechanical Integrity Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'asset-performance-management',
+    description: 'Ensuring the mechanical integrity of assets and equipment'
+  }
+];
+
+// Level 3 capabilities for Assets, Equipment & Tools Management
+const level3AssetsEquipmentToolsManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'asset-information-governance',
+    name: 'Asset Information Governance',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'assets-equipment-tools-management',
+    description: 'Governing and managing asset information and data'
+  },
+  {
+    id: 'asset-lifecycle-management',
+    name: 'Asset Lifecycle Management (ALCM)',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'assets-equipment-tools-management',
+    description: 'Managing assets throughout their lifecycle from acquisition to disposal'
+  },
+  {
+    id: 'asset-network-collaboration',
+    name: 'Asset Network & Collaboration',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'assets-equipment-tools-management',
+    description: 'Facilitating collaboration and networking around asset management'
+  },
+  {
+    id: 'assets-equipment-tools-installation',
+    name: 'Assets, Equipment & Tools Installation Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'assets-equipment-tools-management',
+    description: 'Managing the installation of assets, equipment, and tools'
+  }
+];
+
+// Level 3 capabilities for Building & Plant Engineering
+const level3BuildingPlantEngineeringCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'construction-management',
+    name: 'Construction Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'building-plant-engineering',
+    description: 'Managing construction projects for buildings and plants'
+  },
+  {
+    id: 'engineering-design',
+    name: 'Engineering Design',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'building-plant-engineering',
+    description: 'Designing engineering solutions for buildings and plants'
+  },
+  {
+    id: 'plant-commissioning-handover',
+    name: 'Plant Commissioning & Handover',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'building-plant-engineering',
+    description: 'Managing the commissioning and handover of plants'
+  }
+];
+
+// Level 3 capabilities for Location Operations Management
+const level3LocationOperationsManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'energy-utility-infrastructure',
+    name: 'Energy & Utility Infrastructure Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-operations-management',
+    description: 'Managing energy and utility infrastructure for locations'
+  },
+  {
+    id: 'exterior-grounds-management',
+    name: 'Exterior & Grounds Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-operations-management',
+    description: 'Managing exterior spaces and grounds'
+  },
+  {
+    id: 'physical-security',
+    name: 'Physical Security',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-operations-management',
+    description: 'Ensuring physical security of locations and facilities'
+  },
+  {
+    id: 'service-management',
+    name: 'Service Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-operations-management',
+    description: 'Managing services for locations and facilities'
+  },
+  {
+    id: 'workspace-asset-management',
+    name: 'Workspace & Asset Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-operations-management',
+    description: 'Managing workspaces and assets within locations'
+  }
+];
+
+// Level 3 capabilities for Location Strategy & Development
+const level3LocationStrategyDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'building-information-modeling',
+    name: 'Building Information Modeling',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Using building information modeling for location planning and development'
+  },
+  {
+    id: 'design-build-equipment-facilities',
+    name: 'Design & Build Equipment & Facilities',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Designing and building equipment and facilities'
+  },
+  {
+    id: 'facility-planning',
+    name: 'Facility Planning',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Planning for facility development and expansion'
+  },
+  {
+    id: 'modeling-optimization-management',
+    name: 'Modeling & Optimization Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Modeling and optimizing location and facility layouts'
+  },
+  {
+    id: 'property-strategy-vision',
+    name: 'Property Strategy & Vision Development',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Developing property strategies and visions'
+  },
+  {
+    id: 'workplace-asset-provisioning',
+    name: 'Workplace & Asset Provisioning',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-strategy-development',
+    description: 'Provisioning workplaces and assets for locations'
+  }
+];
+
+// Level 3 capabilities for Maintenance Work Management
+const level3MaintenanceWorkManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'maintenance-work-order-management',
+    name: 'Maintenance Work Order Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'maintenance-work-management',
+    description: 'Managing maintenance work orders and tasks'
+  },
+  {
+    id: 'work-permit-isolations-management',
+    name: 'Work Permit & Isolations Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'maintenance-work-management',
+    description: 'Managing work permits and isolations for maintenance activities'
+  }
+];
+
+// Level 3 capabilities for Technical Material Management
+const level3TechnicalMaterialManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'material-parts-quality-management',
+    name: 'Material & Parts Quality Management',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'technical-material-management',
+    description: 'Managing the quality of materials and parts'
+  },
+  {
+    id: 'spare-parts-management-optimization',
+    name: 'Spare Parts Management & Optimization',
+    level: 3,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'technical-material-management',
+    description: 'Managing and optimizing spare parts inventory'
+  }
+];
+
+// Level 2 capabilities for Location, Facility, Engineering & Asset Management
+const level2LocationFacilityEngineeringAssetManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'asset-performance-management',
+    name: 'Asset Performance Management',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Managing and optimizing asset performance',
+    children: level3AssetPerformanceManagementCapabilities
+  },
+  {
+    id: 'assets-equipment-tools-management',
+    name: 'Assets, Equipment & Tools Management',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Managing assets, equipment, and tools',
+    children: level3AssetsEquipmentToolsManagementCapabilities
+  },
+  {
+    id: 'building-plant-engineering',
+    name: 'Building & Plant Engineering',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Engineering for buildings and plants',
+    children: level3BuildingPlantEngineeringCapabilities
+  },
+  {
+    id: 'location-operations-management',
+    name: 'Location Operations Management',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Managing location operations',
+    children: level3LocationOperationsManagementCapabilities
+  },
+  {
+    id: 'location-strategy-development',
+    name: 'Location Strategy & Development',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Developing location strategies',
+    children: level3LocationStrategyDevelopmentCapabilities
+  },
+  {
+    id: 'maintenance-performance-monitoring',
+    name: 'Maintenance Performance Monitoring',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Monitoring maintenance performance',
+    children: []
+  },
+  {
+    id: 'maintenance-work-management',
+    name: 'Maintenance Work Management',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Managing maintenance work',
+    children: level3MaintenanceWorkManagementCapabilities
+  },
+  {
+    id: 'technical-material-management',
+    name: 'Technical Material Management',
+    level: 2,
+    category: 'core',
+    domain: 'Facilities',
+    parentId: 'location-facility-engineering-asset-management',
+    description: 'Managing technical materials',
+    children: level3TechnicalMaterialManagementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -3247,7 +3593,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Facilities',
     description: 'Capabilities related to location, facility, engineering, and asset management',
-    children: []
+    children: level2LocationFacilityEngineeringAssetManagementCapabilities
   },
   {
     id: 'logistics',
