@@ -3467,6 +3467,305 @@ const level2LocationFacilityEngineeringAssetManagementCapabilities: BusinessCapa
   }
 ];
 
+// Level 3 capabilities for Delivery & Transportation Management
+const level3DeliveryTransportationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: '3pl-inventory-management',
+    name: '3PL inventory Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Managing inventory through third-party logistics providers'
+  },
+  {
+    id: 'delivery-complaints-management',
+    name: 'Delivery Complaints Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Managing and resolving delivery-related complaints'
+  },
+  {
+    id: 'freight-cost-management',
+    name: 'Freight Cost Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Managing and optimizing freight costs'
+  },
+  {
+    id: 'shipment-tracking-1',
+    name: 'Shipment Tracking',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Tracking shipments throughout the delivery process'
+  },
+  {
+    id: 'shipment-tracking-2',
+    name: 'Shipment Tracking ',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Additional aspects of tracking shipments'
+  },
+  {
+    id: 'transport-mode-management',
+    name: 'Transport Mode Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Managing different modes of transportation'
+  },
+  {
+    id: 'transport-planning-ordering-execution',
+    name: 'Transport planning, ordering & execution',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'delivery-transportation-management',
+    description: 'Planning, ordering, and executing transportation activities'
+  }
+];
+
+// Level 3 capabilities for Goods Issuing
+const level3GoodsIssuingCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'handling-unit-management',
+    name: 'Handling Unit Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'goods-issuing',
+    description: 'Managing handling units for goods issuing'
+  },
+  {
+    id: 'picking-pack',
+    name: 'Picking & Pack',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'goods-issuing',
+    description: 'Managing picking and packing processes for goods issuing'
+  },
+  {
+    id: 'shipment-notification',
+    name: 'Shipment Notification',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'goods-issuing',
+    description: 'Managing shipment notifications for goods issuing'
+  }
+];
+
+// Level 3 capabilities for Hazardous Goods Management
+const level3HazardousGoodsManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'dangerous-goods-checks-documents',
+    name: 'Dangerous Goods Checks & Documents',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Performing checks and managing documents for dangerous goods'
+  },
+  {
+    id: 'hazardous-material-labeling',
+    name: 'Hazardous Material Labeling',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Managing labeling for hazardous materials'
+  },
+  {
+    id: 'sds-authoring-provisioning',
+    name: 'SDS Authoring & Provisioning',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Authoring and provisioning Safety Data Sheets'
+  },
+  {
+    id: 'specification-database-recipe-composition',
+    name: 'Specification Database Recipe & Composition',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Managing specification databases for recipes and compositions'
+  },
+  {
+    id: 'substance-classification',
+    name: 'Substance Classification',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Classifying substances for hazardous goods management'
+  },
+  {
+    id: 'substance-notification',
+    name: 'Substance Notification',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Managing substance notifications for hazardous goods'
+  },
+  {
+    id: 'substance-volume-tracking',
+    name: 'Substance Volume Tracking',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'hazardous-goods-management',
+    description: 'Tracking volumes of substances for hazardous goods management'
+  }
+];
+
+// Level 3 capabilities for Site Logistics
+const level3SiteLogisticsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'hub-logistics-crossdocking',
+    name: 'Hub Logistics (crossdocking)',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'site-logistics',
+    description: 'Managing hub logistics and crossdocking operations'
+  },
+  {
+    id: 'yard-logistics',
+    name: 'Yard Logistics',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'site-logistics',
+    description: 'Managing yard logistics operations'
+  }
+];
+
+// Level 3 capabilities for Warehouse Management
+const level3WarehouseManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'goods-receivement',
+    name: 'Goods Receivement',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Managing the receipt of goods in warehouses'
+  },
+  {
+    id: 'hazardous-material-warehouse-management',
+    name: 'Hazardous Material Warehouse Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Managing warehouses for hazardous materials'
+  },
+  {
+    id: 'physical-inventory-management-1',
+    name: 'Physical Inventory Management',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Managing physical inventory in warehouses'
+  },
+  {
+    id: 'physical-inventory-management-2',
+    name: 'Physical Inventory Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Additional aspects of managing physical inventory'
+  },
+  {
+    id: 'stock-management',
+    name: 'Stock Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Managing stock levels and movements in warehouses'
+  },
+  {
+    id: 'warehouse-costs-management',
+    name: 'Warehouse Costs Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'warehouse-management',
+    description: 'Managing and optimizing warehouse costs'
+  }
+];
+
+// Level 2 capabilities for Logistics
+const level2LogisticsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'delivery-transportation-management',
+    name: 'Delivery & Transportation Management',
+    level: 2,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'logistics',
+    description: 'Managing delivery and transportation processes',
+    children: level3DeliveryTransportationCapabilities
+  },
+  {
+    id: 'goods-issuing',
+    name: 'Goods issuing',
+    level: 2,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'logistics',
+    description: 'Managing the process of issuing goods',
+    children: level3GoodsIssuingCapabilities
+  },
+  {
+    id: 'hazardous-goods-management',
+    name: 'hazardous goods management',
+    level: 2,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'logistics',
+    description: 'Managing hazardous goods throughout the logistics process',
+    children: level3HazardousGoodsManagementCapabilities
+  },
+  {
+    id: 'site-logistics',
+    name: 'Site Logistics',
+    level: 2,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'logistics',
+    description: 'Managing logistics operations at specific sites',
+    children: level3SiteLogisticsCapabilities
+  },
+  {
+    id: 'warehouse-management',
+    name: 'Warehouse Management',
+    level: 2,
+    category: 'core',
+    domain: 'Logistics',
+    parentId: 'logistics',
+    description: 'Managing warehouse operations and inventory',
+    children: level3WarehouseManagementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -3602,7 +3901,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Logistics',
     description: 'Capabilities related to logistics, warehousing, and transportation',
-    children: []
+    children: level2LogisticsCapabilities
   },
   {
     id: 'performance-management',
