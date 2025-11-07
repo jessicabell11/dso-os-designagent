@@ -3766,6 +3766,63 @@ const level2LogisticsCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for Dynamic Field Optimization
+const level3DynamicFieldOptimizationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'dynamic-field-optimization',
+    name: 'Dynamic Field Optimization',
+    level: 3,
+    category: 'core',
+    domain: 'Management',
+    parentId: 'operational-excellence',
+    description: 'Optimizing field operations dynamically based on real-time data and analytics'
+  }
+];
+
+// Level 2 capabilities for Performance Management
+const level2PerformanceManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'integrated-performance-management',
+    name: 'Integrated Performance Management (across the Value Chain)',
+    level: 2,
+    category: 'core',
+    domain: 'Management',
+    parentId: 'performance-management',
+    description: 'Managing performance across the entire value chain in an integrated manner',
+    children: []
+  },
+  {
+    id: 'operational-excellence',
+    name: 'Operational Excellence',
+    level: 2,
+    category: 'core',
+    domain: 'Management',
+    parentId: 'performance-management',
+    description: 'Achieving operational excellence through continuous improvement and optimization',
+    children: level3DynamicFieldOptimizationCapabilities
+  },
+  {
+    id: 'performance-improvement',
+    name: 'Performance Improvement',
+    level: 2,
+    category: 'core',
+    domain: 'Management',
+    parentId: 'performance-management',
+    description: 'Implementing initiatives to improve organizational performance',
+    children: []
+  },
+  {
+    id: 'performance-monitoring',
+    name: 'Performance Monitoring',
+    level: 2,
+    category: 'core',
+    domain: 'Management',
+    parentId: 'performance-management',
+    description: 'Monitoring and measuring performance against key metrics and targets',
+    children: []
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -3910,7 +3967,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Management',
     description: 'Capabilities related to performance management',
-    children: []
+    children: level2PerformanceManagementCapabilities
   },
   {
     id: 'pharma-commercial-engagement',
