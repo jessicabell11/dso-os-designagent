@@ -3982,6 +3982,60 @@ const level2PHCommercialImprovementCapabilities: BusinessCapabilityHierarchy[] =
   }
 ];
 
+// Level 3 capabilities for PH Commercial Insights
+const level3PHCommercialInsightsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-modelling',
+    name: 'PH Commercial Modelling',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-insights-l2',
+    description: 'Developing and using models for pharmaceutical commercial insights'
+  },
+  {
+    id: 'ph-commercial-patient-customer-insights',
+    name: 'PH Commercial Patient & Customer Insights',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-insights-l2',
+    description: 'Gathering and analyzing insights about patients and customers'
+  },
+  {
+    id: 'ph-commercial-primary-market-research',
+    name: 'PH Commercial Primary Market Research',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-insights-l2',
+    description: 'Conducting primary market research for pharmaceutical commercial purposes'
+  },
+  {
+    id: 'ph-commercial-secondary-market-research',
+    name: 'PH Commercial Secondary Market Research',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-insights-l2',
+    description: 'Conducting secondary market research for pharmaceutical commercial purposes'
+  }
+];
+
+// Level 2 capabilities for PH Commercial Insights
+const level2PHCommercialInsightsCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-insights-l2',
+    name: 'PH Commercial Insights',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-insights',
+    description: 'Gathering and analyzing insights for pharmaceutical commercial purposes',
+    children: level3PHCommercialInsightsCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -4162,7 +4216,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial insights',
-    children: []
+    children: level2PHCommercialInsightsCapabilities
   },
   {
     id: 'pharma-commercial-proposition',
