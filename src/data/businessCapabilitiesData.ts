@@ -3823,6 +3823,165 @@ const level2PerformanceManagementCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 2 capabilities for PH Commercial Engagement
+const level2PHCommercialEngagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-content-development',
+    name: 'PH Commercial Content Development & Delivery',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Developing and delivering commercial content for pharmaceutical products',
+    children: []
+  },
+  {
+    id: 'ph-commercial-customer-patient-support',
+    name: 'PH Commercial Customer & Patient Support',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Providing support to customers and patients for pharmaceutical products',
+    children: []
+  },
+  {
+    id: 'ph-commercial-digital-engagement',
+    name: 'PH Commercial Digital Engagement & Automation',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Engaging customers digitally and automating commercial processes',
+    children: []
+  },
+  {
+    id: 'ph-commercial-engagement-planning',
+    name: 'PH Commercial Engagement Planning',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Planning commercial engagement strategies and activities',
+    children: []
+  },
+  {
+    id: 'ph-commercial-events-p2p',
+    name: 'PH Commercial Events & P2P Engagement',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Managing commercial events and peer-to-peer engagement',
+    children: []
+  },
+  {
+    id: 'ph-commercial-field-engagement',
+    name: 'PH Commercial Field Engagement',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Managing field engagement activities for commercial purposes',
+    children: []
+  },
+  {
+    id: 'ph-commercial-media-orchestration',
+    name: 'PH Commercial 3rd Party Media Orchestration',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Orchestrating third-party media for commercial purposes',
+    children: []
+  },
+  {
+    id: 'ph-commercial-market-insights',
+    name: 'PH Commercial Market Insights',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Gathering and analyzing market insights for commercial decision-making',
+    children: []
+  },
+  {
+    id: 'ph-commercial-cx-measurement',
+    name: 'PH Commercial CX Measurement',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Measuring customer experience for commercial activities',
+    children: []
+  },
+  {
+    id: 'ph-commercial-engagement-measurement',
+    name: 'PH Commercial Engagement Measurement',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Measuring the effectiveness of commercial engagement activities',
+    children: []
+  },
+  {
+    id: 'ph-commercial-learning-cycles',
+    name: 'PH Commercial Learning cycles',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-engagement',
+    description: 'Managing learning cycles for continuous improvement of commercial activities',
+    children: []
+  }
+];
+
+// Level 3 capabilities for PH Commercial Improvement
+const level3PHCommercialImprovementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-cx-measurement-l3',
+    name: 'PH Commercial CX Measurement',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-improvement-l2',
+    description: 'Measuring customer experience for commercial activities'
+  },
+  {
+    id: 'ph-commercial-engagement-measurement-l3',
+    name: 'PH Commercial Engagement Measurement',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-improvement-l2',
+    description: 'Measuring the effectiveness of commercial engagement activities'
+  },
+  {
+    id: 'ph-commercial-learning-cycles-l3',
+    name: 'PH Commercial Learning cycles',
+    level: 3,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'ph-commercial-improvement-l2',
+    description: 'Managing learning cycles for continuous improvement of commercial activities'
+  }
+];
+
+// Level 2 capabilities for PH Commercial Improvement
+const level2PHCommercialImprovementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-improvement-l2',
+    name: 'PH Commercial Improvement',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-improvement',
+    description: 'Improving pharmaceutical commercial activities',
+    children: level3PHCommercialImprovementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -3976,7 +4135,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial engagement',
-    children: []
+    children: level2PHCommercialEngagementCapabilities
   },
   {
     id: 'pharma-commercial-environment',
@@ -3994,7 +4153,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial improvement',
-    children: []
+    children: level2PHCommercialImprovementCapabilities
   },
   {
     id: 'pharma-commercial-insights',
