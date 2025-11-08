@@ -4036,6 +4036,34 @@ const level2PHCommercialInsightsCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 2 capabilities for PH Commercial Proposition
+const level2PHCommercialPropositionCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-brand',
+    name: 'PH Commercial Brand',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-proposition',
+    description: 'Managing pharmaceutical commercial brands and brand strategies',
+    children: []
+  }
+];
+
+// Level 2 capabilities for PH Commercial Segmentation
+const level2PHCommercialSegmentationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-patient-customer-segmentation',
+    name: 'PH Commercial Patient & Customer Segmentation',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-segmentation',
+    description: 'Segmenting patients and customers for pharmaceutical commercial purposes',
+    children: []
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -4225,7 +4253,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial proposition',
-    children: []
+    children: level2PHCommercialPropositionCapabilities
   },
   {
     id: 'pharma-commercial-segmentation',
@@ -4234,7 +4262,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial segmentation',
-    children: []
+    children: level2PHCommercialSegmentationCapabilities
   },
   {
     id: 'pharma-commercial-strategy',
