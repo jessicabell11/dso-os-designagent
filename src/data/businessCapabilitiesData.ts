@@ -4064,6 +4064,240 @@ const level2PHCommercialSegmentationCapabilities: BusinessCapabilityHierarchy[] 
   }
 ];
 
+// Level 2 capabilities for PH Commercial Strategy
+const level2PHCommercialStrategyCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'ph-commercial-business-development-licensing',
+    name: 'PH Commercial Business Development & Licensing',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-strategy',
+    description: 'Managing business development and licensing for pharmaceutical commercial purposes',
+    children: []
+  },
+  {
+    id: 'ph-commercial-market-access',
+    name: 'PH Commercial Market Access',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-strategy',
+    description: 'Managing market access for pharmaceutical products',
+    children: []
+  },
+  {
+    id: 'ph-commercial-marketing-strategy',
+    name: 'PH Commercial Marketing Strategy',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-strategy',
+    description: 'Developing and implementing marketing strategies for pharmaceutical products',
+    children: []
+  },
+  {
+    id: 'ph-revenue-management',
+    name: 'PH Revenue Management',
+    level: 2,
+    category: 'core',
+    domain: 'Pharma',
+    parentId: 'pharma-commercial-strategy',
+    description: 'Managing revenue for pharmaceutical products',
+    children: []
+  }
+];
+
+// Level 3 capabilities for Contract to Pay
+const level3ContractToPayCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'conduct-sourcing',
+    name: 'Conduct Sourcing',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Conducting sourcing activities for procurement'
+  },
+  {
+    id: 'post-purchase-order-management-1',
+    name: 'Post Purchase Order Management',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Managing activities after purchase orders are created'
+  },
+  {
+    id: 'post-purchase-order-management-2',
+    name: 'Post Purchase Order Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Additional aspects of managing activities after purchase orders are created'
+  },
+  {
+    id: 'procurement-category-strategy',
+    name: 'Procurement Category Strategy',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Developing and implementing procurement category strategies'
+  },
+  {
+    id: 'procurement-content-management-1',
+    name: 'Procurement Content Management',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Managing procurement content and documentation'
+  },
+  {
+    id: 'procurement-content-management-2',
+    name: 'Procurement Content Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Additional aspects of managing procurement content and documentation'
+  },
+  {
+    id: 'purchase-order-management',
+    name: 'Purchase Order Management',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Managing purchase orders throughout their lifecycle'
+  },
+  {
+    id: 'supplier-invoice-processing',
+    name: 'Supplier Invoice Processing',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'contract-to-pay',
+    description: 'Processing and managing supplier invoices'
+  }
+];
+
+// Level 3 capabilities for Source to Contract
+const level3SourceToContractCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'procurement-performance-measurement',
+    name: 'Procurement Performance Measurement',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'source-to-contract',
+    description: 'Measuring and analyzing procurement performance'
+  },
+  {
+    id: 'purchase-request-management-1',
+    name: 'Purchase Request Management',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'source-to-contract',
+    description: 'Managing purchase requests from initiation to approval'
+  },
+  {
+    id: 'purchase-request-management-2',
+    name: 'Purchase Request Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'source-to-contract',
+    description: 'Additional aspects of managing purchase requests'
+  },
+  {
+    id: 'sourcing',
+    name: 'Sourcing',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'source-to-contract',
+    description: 'Identifying and selecting suppliers for goods and services'
+  }
+];
+
+// Level 3 capabilities for Strategic Procurement Management
+const level3StrategicProcurementManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'functional-procurement-strategy',
+    name: 'Functional Procurement Strategy',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'strategic-procurement-management',
+    description: 'Developing and implementing functional procurement strategies'
+  },
+  {
+    id: 'procurement-business-partnering',
+    name: 'Procurement Business Partnering',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'strategic-procurement-management',
+    description: 'Building and maintaining relationships with business partners for procurement'
+  },
+  {
+    id: 'supplier-management-1',
+    name: 'Supplier Management',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'strategic-procurement-management',
+    description: 'Managing supplier relationships and performance'
+  },
+  {
+    id: 'supplier-management-2',
+    name: 'Supplier Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'strategic-procurement-management',
+    description: 'Additional aspects of managing supplier relationships and performance'
+  }
+];
+
+// Level 2 capabilities for Procurement & Sourcing
+const level2ProcurementSourcingCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'contract-to-pay',
+    name: 'Contract to Pay',
+    level: 2,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'procurement-sourcing',
+    description: 'Managing the process from contract creation to payment',
+    children: level3ContractToPayCapabilities
+  },
+  {
+    id: 'source-to-contract',
+    name: 'Source to Contract',
+    level: 2,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'procurement-sourcing',
+    description: 'Managing the process from sourcing to contract creation',
+    children: level3SourceToContractCapabilities
+  },
+  {
+    id: 'strategic-procurement-management',
+    name: 'Strategic Procurement Management',
+    level: 2,
+    category: 'core',
+    domain: 'Procurement',
+    parentId: 'procurement-sourcing',
+    description: 'Managing procurement strategically to achieve business objectives',
+    children: level3StrategicProcurementManagementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -4271,7 +4505,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Pharma',
     description: 'Capabilities related to pharmaceutical commercial strategy',
-    children: []
+    children: level2PHCommercialStrategyCapabilities
   },
   {
     id: 'pharma-mapv-engagement',
@@ -4442,7 +4676,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Procurement',
     description: 'Capabilities related to procurement and sourcing',
-    children: []
+    children: level2ProcurementSourcingCapabilities
   },
   {
     id: 'product-service-discovery-development-management',
