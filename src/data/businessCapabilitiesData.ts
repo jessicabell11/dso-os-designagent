@@ -4298,6 +4298,332 @@ const level2ProcurementSourcingCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for Discovery & Concept Management
+const level3DiscoveryConceptManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'concept-tracking',
+    name: 'Concept Tracking',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Tracking and managing product concepts throughout their lifecycle'
+  },
+  {
+    id: 'digital-drug-discovery-1',
+    name: 'Digital Drug Discovery',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Using digital technologies for drug discovery'
+  },
+  {
+    id: 'digital-drug-discovery-2',
+    name: 'Digital Drug Discovery ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Additional aspects of using digital technologies for drug discovery'
+  },
+  {
+    id: 'discovery-management',
+    name: 'Discovery Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Managing the discovery process for new products and services'
+  },
+  {
+    id: 'disease-understanding-1',
+    name: 'Disease Understanding',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Developing understanding of diseases for product development'
+  },
+  {
+    id: 'disease-understanding-2',
+    name: 'Disease Understanding ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Additional aspects of developing understanding of diseases'
+  },
+  {
+    id: 'first-product-prototype-invention-1',
+    name: 'First Product Prototype Invention',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Creating the first prototype of a new product'
+  },
+  {
+    id: 'first-product-prototype-invention-2',
+    name: 'First Product Prototype Invention ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Additional aspects of creating the first prototype of a new product'
+  },
+  {
+    id: 'product-toxicity-prediction-analysis-1',
+    name: 'Product Toxicity Prediction & Analysis',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Predicting and analyzing product toxicity'
+  },
+  {
+    id: 'product-toxicity-prediction-analysis-2',
+    name: 'Product Toxicity Prediction & Analysis ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Additional aspects of predicting and analyzing product toxicity'
+  },
+  {
+    id: 'research-licensing-performance-management',
+    name: 'Research/Licensing Performance Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'discovery-concept-management',
+    description: 'Managing the performance of research and licensing activities'
+  }
+];
+
+// Level 3 capabilities for Product & Service Development
+const level3ProductServiceDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'digital-trial-management-decentralization-1',
+    name: 'Digital Trial Management & Decentralization',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Managing digital trials and decentralization of trial processes'
+  },
+  {
+    id: 'digital-trial-management-decentralization-2',
+    name: 'Digital Trial Management & Decentralization ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Additional aspects of managing digital trials and decentralization'
+  },
+  {
+    id: 'product-service-design-build-1',
+    name: 'Product & Service Design & Build',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Designing and building products and services'
+  },
+  {
+    id: 'product-service-design-build-2',
+    name: 'Product & Service Design & Build ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Additional aspects of designing and building products and services'
+  },
+  {
+    id: 'product-service-market-testing',
+    name: 'Product & Service Market Testing',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Testing products and services in the market'
+  },
+  {
+    id: 'product-service-pipeline',
+    name: 'Product & Service Pipeline',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Managing the pipeline of products and services in development'
+  },
+  {
+    id: 'trial-product-development-manufacturing-1',
+    name: 'Trial Product Development & Manufacturing',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Developing and manufacturing products for trials'
+  },
+  {
+    id: 'trial-product-development-manufacturing-2',
+    name: 'Trial Product Development & Manufacturing ',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-development',
+    description: 'Additional aspects of developing and manufacturing products for trials'
+  }
+];
+
+// Level 3 capabilities for Product & Service Lifecycle Management
+const level3ProductServiceLifecycleManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'product-change-management',
+    name: 'Product Change Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-lifecycle-management',
+    description: 'Managing changes to products throughout their lifecycle'
+  },
+  {
+    id: 'product-launch',
+    name: 'Product Launch',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-lifecycle-management',
+    description: 'Managing the launch of new products to the market'
+  }
+];
+
+// Level 3 capabilities for Product & Service Portfolio Management
+const level3ProductServicePortfolioManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'product-service-information-management',
+    name: 'Product & Service Information Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-portfolio-management',
+    description: 'Managing information about products and services'
+  },
+  {
+    id: 'product-service-mix-selection-management',
+    name: 'Product & Service Mix Selection Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-portfolio-management',
+    description: 'Managing the selection of product and service mix'
+  },
+  {
+    id: 'product-service-portfolio-assessment',
+    name: 'Product & Service Portfolio Assessment',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-portfolio-management',
+    description: 'Assessing the portfolio of products and services'
+  },
+  {
+    id: 'product-concept-strategy-management',
+    name: 'Product Concept Strategy Management',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-portfolio-management',
+    description: 'Managing strategies for product concepts'
+  }
+];
+
+// Level 3 capabilities for Technology Development
+const level3TechnologyDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'natural-prototyping',
+    name: 'Natural Prototyping',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'technology-development',
+    description: 'Creating prototypes using natural methods and materials'
+  },
+  {
+    id: 'showcasing-piloting',
+    name: 'Showcasing & Piloting',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'technology-development',
+    description: 'Showcasing and piloting new technologies'
+  },
+  {
+    id: 'technology-screening',
+    name: 'Technology Screening',
+    level: 3,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'technology-development',
+    description: 'Screening technologies for potential use in products and services'
+  }
+];
+
+// Level 2 capabilities for Product & Service Discovery, Development & Management
+const level2ProductServiceCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'discovery-concept-management',
+    name: 'Discovery & Concept Management',
+    level: 2,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-discovery-development-management',
+    description: 'Managing the discovery and concept development process',
+    children: level3DiscoveryConceptManagementCapabilities
+  },
+  {
+    id: 'product-service-development',
+    name: 'Product & Service Development',
+    level: 2,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-discovery-development-management',
+    description: 'Developing products and services from concept to market-ready solutions',
+    children: level3ProductServiceDevelopmentCapabilities
+  },
+  {
+    id: 'product-service-lifecycle-management',
+    name: 'Product & Service Lifecycle Management',
+    level: 2,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-discovery-development-management',
+    description: 'Managing products and services throughout their lifecycle',
+    children: level3ProductServiceLifecycleManagementCapabilities
+  },
+  {
+    id: 'product-service-portfolio-management',
+    name: 'Product & Service Portfolio Management',
+    level: 2,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-discovery-development-management',
+    description: 'Managing the portfolio of products and services',
+    children: level3ProductServicePortfolioManagementCapabilities
+  },
+  {
+    id: 'technology-development',
+    name: 'Technology Development',
+    level: 2,
+    category: 'core',
+    domain: 'Product',
+    parentId: 'product-service-discovery-development-management',
+    description: 'Developing technologies for use in products and services',
+    children: level3TechnologyDevelopmentCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -4685,7 +5011,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Product',
     description: 'Capabilities related to product and service discovery, development, and management',
-    children: []
+    children: level2ProductServiceCapabilities
   },
   {
     id: 'product-service-marketing',
@@ -4745,90 +5071,6 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
 
 // Level 1 Enabling Capabilities - now empty as we're using a single list
 export const level1EnablingCapabilities: BusinessCapabilityHierarchy[] = [];
-
-// Level 2 Core Capabilities (medium blue boxes) - Example for Product & Service Discovery, Development & Management
-const level2DevelopCapabilities: BusinessCapabilityHierarchy[] = [
-  {
-    id: 'develop-discovery',
-    name: 'Discovery & Concept Management',
-    level: 2,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'product-service-discovery-development-management',
-    description: 'Managing the discovery and concept development process',
-    children: []
-  },
-  {
-    id: 'develop-innovation',
-    name: 'Innovation Management',
-    level: 2,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'product-service-discovery-development-management',
-    description: 'Managing the innovation process from ideation to implementation',
-    children: []
-  },
-  {
-    id: 'develop-product',
-    name: 'Product Development',
-    level: 2,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'product-service-discovery-development-management',
-    description: 'Creating and evolving products from concept to market-ready solutions',
-    children: []
-  },
-  {
-    id: 'develop-research',
-    name: 'Research',
-    level: 2,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'product-service-discovery-development-management',
-    description: 'Scientific research activities to discover new knowledge and applications',
-    children: []
-  }
-];
-
-// Level 3 Core Capabilities (light blue boxes) - Example for Discovery & Concept Management
-const level3DiscoveryCapabilities: BusinessCapabilityHierarchy[] = [
-  {
-    id: 'develop-discovery-management',
-    name: 'Discovery Management',
-    level: 3,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'develop-discovery',
-    description: 'Managing the discovery process for new products and services'
-  },
-  {
-    id: 'develop-concept-development',
-    name: 'Concept Development',
-    level: 3,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'develop-discovery',
-    description: 'Developing concepts for new products and services'
-  },
-  {
-    id: 'develop-concept-validation',
-    name: 'Concept Validation',
-    level: 3,
-    category: 'core',
-    domain: 'Product',
-    parentId: 'develop-discovery',
-    description: 'Validating concepts for new products and services'
-  }
-];
-
-// Add level 3 capabilities to their parent level 2 capabilities
-level2DevelopCapabilities[0].children = level3DiscoveryCapabilities;
-
-// Add level 2 capabilities to their parent level 1 capabilities
-const productServiceIndex = level1CoreCapabilities.findIndex(cap => cap.id === 'product-service-discovery-development-management');
-if (productServiceIndex !== -1) {
-  level1CoreCapabilities[productServiceIndex].children = level2DevelopCapabilities;
-}
 
 // Combine all level 1 capabilities
 export const allLevel1Capabilities = [...level1CoreCapabilities, ...level1EnablingCapabilities];
