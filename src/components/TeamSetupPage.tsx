@@ -85,7 +85,7 @@ const TeamSetupPage: React.FC = () => {
   const [isDescriptionEditing, setIsDescriptionEditing] = useState(false);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
-  const [activeTab, setActiveTab] = useState<'editor' | 'preview' | 'approvals' | 'team-members'>('editor');
+  const [activeTab, setActiveTab] = useState<'editor' | 'preview' | 'approvals'>('editor');
   const [sidebarActiveTab, setSidebarActiveTab] = useState('team-setup');
   const [isBacklogLinkEditing, setIsBacklogLinkEditing] = useState(false);
   const [backlogUrl, setBacklogUrl] = useState('');
@@ -1950,157 +1950,22 @@ const TeamSetupPage: React.FC = () => {
                     </div>
                   )}
                 </div>
-              </div>
-              
-              <div className="border-b border-gray-200">
-                <nav className="flex -mb-px">
-                  <button
-                    onClick={() => setActiveTab('editor')}
-                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
-                      activeTab === 'editor'
-                        ? 'border-blue-500 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    <FileText className="h-5 w-5 inline mr-1" />
-                    Editor
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('team-members')}
-                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
-                      activeTab === 'team-members'
-                        ? 'border-blue-500 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    <Users className="h-5 w-5 inline mr-1" />
-                    Team Members ({teamMembers.length})
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('preview')}
-                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
-                      activeTab === 'preview'
-                        ? 'border-blue-500 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    <Eye className="h-5 w-5 inline mr-1" />
-                    Preview
-                  </button>
-                  <button
-                    onClick={() => setActiveTab('approvals')}
-                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
-                      activeTab === 'approvals'
-                        ? 'border-blue-500 text-blue-600'
-                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
-                    }`}
-                  >
-                    <CheckCircle className="h-5 w-5 inline mr-1" />
-                    Approvals ({workingAgreement.approvals.filter(a => a.approved).length}/{workingAgreement.approvals.length})
-                  </button>
-                </nav>
-              </div>
-              
-              {activeTab === 'editor' && (
-                <div className="p-4">
-                  {workingAgreement.sections.map((section) => (
-                    <div key={section.id} className="mb-6 border border-gray-200 rounded-lg overflow-hidden">
-                      <div className="bg-gray-50 px-4 py-3 flex justify-between items-center">
-                        {section.isEditing ? (
-                          <input
-                            type="text"
-                            value={section.title}
-                            onChange={(e) => handleSectionTitleChange(section.id, e.target.value)}
-                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          />
-                        ) : (
-                          <h3 className="text-sm font-medium text-gray-900">{section.title}</h3>
-                        )}
-                        
-                        <div className="flex space-x-1">
-                          {section.isEditing ? (
-                            <>
-                              <button 
-                                onClick={() => handleSectionSave(section.id, section.content)}
-                                className="p-1 text-green-600 hover:text-green-800"
-                                title="Save changes"
-                              >
-                                <Save size={16} />
-                              </button>
-                              <button 
-                                onClick={() => handleSectionCancel(section.id)}
-                                className="p-1 text-red-600 hover:text-red-800"
-                                title="Cancel editing"
-                              >
-                                <X size={16} />
-                              </button>
-                            </>
-                          ) : (
-                            <>
-                              <button 
-                                onClick={() => handleSectionEdit(section.id)}
-                                className="p-1 text-blue-600 hover:text-blue-800"
-                                title="Edit section"
-                              >
-                                <Edit3 size={16} />
-                              </button>
-                              <button 
-                                onClick={() => handleDeleteSection(section.id)}
-                                className="p-1 text-red-600 hover:text-red-800"
-                                title="Delete section"
-                              >
-                                <Trash size={16} />
-                              </button>
-                            </>
-                          )}
-                        </div>
-                      </div>
-                      
-                      <div className="px-4 py-3">
-                        {section.isEditing ? (
-                          <textarea
-                            value={section.content}
-                            onChange={(e) => {
-                              setWorkingAgreement(prev => ({
-                                ...prev,
-                                sections: prev.sections.map(s => 
-                                  s.id === section.id ? { ...s, content: e.target.value } : s
-                                )
-                              }));
-                            }}
-                            rows={5}
-                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                          />
-                        ) : (
-                          <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-line">
-                            {section.content}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
-                  
-                  <div className="mt-4 flex justify-center">
-                    <button
-                      onClick={handleAddSection}
-                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-                    >
-                      <PlusCircle className="h-4 w-4 mr-1" />
-                      Add New Section
-                    </button>
-                  </div>
-                </div>
-              )}
 
-              {activeTab === 'team-members' && (
-                <div className="p-4">
-                  <div className="flex justify-between items-center mb-4">
-                    <h3 className="text-lg font-medium text-gray-900">Team Members</h3>
+                {/* Team Members Section - Moved from tabs to here */}
+                <div className="mt-4 pt-4 border-t border-gray-200">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center">
+                      <Users className="h-5 w-5 mr-2 text-blue-500" />
+                      <h3 className="text-sm font-medium text-gray-900">Team Members</h3>
+                      <span className="ml-2 px-2 py-0.5 text-xs font-medium rounded-full bg-blue-100 text-blue-800">
+                        {teamMembers.length}
+                      </span>
+                    </div>
                     <button
                       onClick={handleAddTeamMember}
-                      className="inline-flex items-center px-3 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      className="inline-flex items-center px-3 py-1.5 border border-transparent text-xs font-medium rounded shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     >
-                      <UserPlus className="h-4 w-4 mr-1" />
+                      <UserPlus size={14} className="mr-1" />
                       Add Team Member
                     </button>
                   </div>
@@ -2320,6 +2185,135 @@ const TeamSetupPage: React.FC = () => {
                       </div>
                     </div>
                   )}
+                </div>
+              </div>
+              
+              <div className="border-b border-gray-200">
+                <nav className="flex -mb-px">
+                  <button
+                    onClick={() => setActiveTab('editor')}
+                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
+                      activeTab === 'editor'
+                        ? 'border-blue-500 text-blue-600'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    }`}
+                  >
+                    <FileText className="h-5 w-5 inline mr-1" />
+                    Editor
+                  </button>
+                  <button
+                    onClick={() => setActiveTab('preview')}
+                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
+                      activeTab === 'preview'
+                        ? 'border-blue-500 text-blue-600'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    }`}
+                  >
+                    <Eye className="h-5 w-5 inline mr-1" />
+                    Preview
+                  </button>
+                  <button
+                    onClick={() => setActiveTab('approvals')}
+                    className={`py-4 px-6 text-center border-b-2 font-medium text-sm ${
+                      activeTab === 'approvals'
+                        ? 'border-blue-500 text-blue-600'
+                        : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                    }`}
+                  >
+                    <CheckCircle className="h-5 w-5 inline mr-1" />
+                    Approvals ({workingAgreement.approvals.filter(a => a.approved).length}/{workingAgreement.approvals.length})
+                  </button>
+                </nav>
+              </div>
+              
+              {activeTab === 'editor' && (
+                <div className="p-4">
+                  {workingAgreement.sections.map((section) => (
+                    <div key={section.id} className="mb-6 border border-gray-200 rounded-lg overflow-hidden">
+                      <div className="bg-gray-50 px-4 py-3 flex justify-between items-center">
+                        {section.isEditing ? (
+                          <input
+                            type="text"
+                            value={section.title}
+                            onChange={(e) => handleSectionTitleChange(section.id, e.target.value)}
+                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        ) : (
+                          <h3 className="text-sm font-medium text-gray-900">{section.title}</h3>
+                        )}
+                        
+                        <div className="flex space-x-1">
+                          {section.isEditing ? (
+                            <>
+                              <button 
+                                onClick={() => handleSectionSave(section.id, section.content)}
+                                className="p-1 text-green-600 hover:text-green-800"
+                                title="Save changes"
+                              >
+                                <Save size={16} />
+                              </button>
+                              <button 
+                                onClick={() => handleSectionCancel(section.id)}
+                                className="p-1 text-red-600 hover:text-red-800"
+                                title="Cancel editing"
+                              >
+                                <X size={16} />
+                              </button>
+                            </>
+                          ) : (
+                            <>
+                              <button 
+                                onClick={() => handleSectionEdit(section.id)}
+                                className="p-1 text-blue-600 hover:text-blue-800"
+                                title="Edit section"
+                              >
+                                <Edit3 size={16} />
+                              </button>
+                              <button 
+                                onClick={() => handleDeleteSection(section.id)}
+                                className="p-1 text-red-600 hover:text-red-800"
+                                title="Delete section"
+                              >
+                                <Trash size={16} />
+                              </button>
+                            </>
+                          )}
+                        </div>
+                      </div>
+                      
+                      <div className="px-4 py-3">
+                        {section.isEditing ? (
+                          <textarea
+                            value={section.content}
+                            onChange={(e) => {
+                              setWorkingAgreement(prev => ({
+                                ...prev,
+                                sections: prev.sections.map(s => 
+                                  s.id === section.id ? { ...s, content: e.target.value } : s
+                                )
+                              }));
+                            }}
+                            rows={5}
+                            className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                          />
+                        ) : (
+                          <div className="prose prose-sm max-w-none text-gray-700 whitespace-pre-line">
+                            {section.content}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                  
+                  <div className="mt-4 flex justify-center">
+                    <button
+                      onClick={handleAddSection}
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                    >
+                      <PlusCircle className="h-4 w-4 mr-1" />
+                      Add New Section
+                    </button>
+                  </div>
                 </div>
               )}
               
