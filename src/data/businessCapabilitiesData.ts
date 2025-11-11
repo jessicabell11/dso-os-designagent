@@ -4624,6 +4624,300 @@ const level2ProductServiceCapabilities: BusinessCapabilityHierarchy[] = [
   }
 ];
 
+// Level 3 capabilities for Category/Brand Strategy Development
+const level3CategoryBrandStrategyDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'category-brand-strategy',
+    name: 'Category/Brand Strategy',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Developing and implementing category and brand strategies'
+  },
+  {
+    id: 'customer-engagement-strategy',
+    name: 'Customer Engagement Strategy Definition & Execution',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Defining and executing strategies for customer engagement'
+  },
+  {
+    id: 'customer-experience-strategy',
+    name: 'Customer Experience Strategy Definition & Execution',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Defining and executing strategies for customer experience'
+  },
+  {
+    id: 'customer-intelligence-management',
+    name: 'Customer Intelligence Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Managing customer intelligence and insights'
+  },
+  {
+    id: 'packaging-strategy-development',
+    name: 'Packaging Strategy Development & Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Developing and managing packaging strategies'
+  },
+  {
+    id: 'pricing-development-management',
+    name: 'Pricing Development & Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Developing and managing pricing strategies'
+  },
+  {
+    id: 'product-detailing-1',
+    name: 'Product Detailing',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Providing detailed information about products to customers'
+  },
+  {
+    id: 'product-detailing-2',
+    name: 'Product Detailing ',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Additional aspects of providing detailed information about products'
+  },
+  {
+    id: 'product-placement',
+    name: 'Product Placement',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'category-brand-strategy-development',
+    description: 'Managing the strategic placement of products'
+  }
+];
+
+// Level 3 capabilities for Customer Understanding & Offer Creation
+const level3CustomerUnderstandingOfferCreationCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'business-development-partnering-licensing',
+    name: 'Business Development & Partnering & Licensing',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'customer-understanding-offer-creation',
+    description: 'Developing business through partnerships and licensing agreements'
+  },
+  {
+    id: 'customer-value-proposition-definition',
+    name: 'Customer\'s Value Proposition Definition',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'customer-understanding-offer-creation',
+    description: 'Defining value propositions for customers'
+  },
+  {
+    id: 'solution-development-offer-management',
+    name: 'Solution Development & Offer Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'customer-understanding-offer-creation',
+    description: 'Developing solutions and managing offers for customers'
+  },
+  {
+    id: 'tender-management',
+    name: 'Tender Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'customer-understanding-offer-creation',
+    description: 'Managing the tender process for products and services'
+  }
+];
+
+// Level 3 capabilities for Go to Market Strategy Development
+const level3GoToMarketStrategyDevelopmentCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'channel-strategy-definition-execution',
+    name: 'Channel Strategy Definition & Execution',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'go-to-market-strategy-development',
+    description: 'Defining and executing channel strategies'
+  },
+  {
+    id: 'market-customer-segmentation',
+    name: 'Market & Customer Segmentation',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'go-to-market-strategy-development',
+    description: 'Segmenting markets and customers for targeted marketing'
+  },
+  {
+    id: 'market-evaluation',
+    name: 'Market Evaluation',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'go-to-market-strategy-development',
+    description: 'Evaluating markets for potential opportunities'
+  },
+  {
+    id: 'market-intelligence-management',
+    name: 'Market Intelligence Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'go-to-market-strategy-development',
+    description: 'Managing market intelligence and insights'
+  }
+];
+
+// Level 3 capabilities for Multichannel Marketing Campaign Management
+const level3MultichannelMarketingCampaignManagementCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'customer-incentive-loyalty-management-1',
+    name: 'Customer Incentive & Loyalty Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Managing customer incentives and loyalty programs'
+  },
+  {
+    id: 'customer-incentive-loyalty-management-2',
+    name: 'Customer Incentive & Loyalty Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Additional aspects of managing customer incentives and loyalty'
+  },
+  {
+    id: 'direct-marketing',
+    name: 'Direct Marketing',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Managing direct marketing campaigns'
+  },
+  {
+    id: 'ms-event-management',
+    name: 'M&S Event Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Managing marketing and sales events'
+  },
+  {
+    id: 'marketing-planning',
+    name: 'Marketing Planning',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Planning marketing activities and campaigns'
+  },
+  {
+    id: 'mass-marketing-1',
+    name: 'Mass Marketing',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Managing mass marketing campaigns'
+  },
+  {
+    id: 'mass-marketing-2',
+    name: 'Mass Marketing ',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Additional aspects of managing mass marketing campaigns'
+  },
+  {
+    id: 'media-development-management-1',
+    name: 'Media Development & Management',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Developing and managing media for marketing campaigns'
+  },
+  {
+    id: 'media-development-management-2',
+    name: 'Media Development & Management ',
+    level: 3,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'multichannel-marketing-campaign-management',
+    description: 'Additional aspects of developing and managing media'
+  }
+];
+
+// Level 2 capabilities for Product & Service Marketing
+const level2ProductServiceMarketingCapabilities: BusinessCapabilityHierarchy[] = [
+  {
+    id: 'category-brand-strategy-development',
+    name: 'Category/Brand Strategy Development',
+    level: 2,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'product-service-marketing',
+    description: 'Developing strategies for categories and brands',
+    children: level3CategoryBrandStrategyDevelopmentCapabilities
+  },
+  {
+    id: 'customer-understanding-offer-creation',
+    name: 'Customer Understanding & Offer Creation',
+    level: 2,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'product-service-marketing',
+    description: 'Understanding customers and creating offers',
+    children: level3CustomerUnderstandingOfferCreationCapabilities
+  },
+  {
+    id: 'go-to-market-strategy-development',
+    name: 'Go to Market Strategy Development',
+    level: 2,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'product-service-marketing',
+    description: 'Developing strategies for bringing products to market',
+    children: level3GoToMarketStrategyDevelopmentCapabilities
+  },
+  {
+    id: 'multichannel-marketing-campaign-management',
+    name: 'Multichannel Marketing Campaign Management',
+    level: 2,
+    category: 'core',
+    domain: 'Marketing',
+    parentId: 'product-service-marketing',
+    description: 'Managing marketing campaigns across multiple channels',
+    children: level3MultichannelMarketingCampaignManagementCapabilities
+  }
+];
+
 // Level 1 Core Capabilities (dark blue boxes)
 export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
   {
@@ -5020,7 +5314,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Marketing',
     description: 'Capabilities related to product and service marketing',
-    children: []
+    children: level2ProductServiceMarketingCapabilities
   },
   {
     id: 'production-manufacturing',
