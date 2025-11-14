@@ -31,17 +31,17 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Focus on delivering measurable business value through platform initiatives that directly support customer objectives and priorities.',
     metrics: [
       {
-        name: 'Business value alignment score',
-        current: '60',
-        target: '90',
+        name: 'Platform Adoption',
+        current: '45',
+        target: '85',
         unit: '%',
         status: 'on-track'
       },
       {
-        name: 'Customer satisfaction',
-        current: '3.5',
-        target: '4.5',
-        unit: 'out of 5',
+        name: 'Feature Usage',
+        current: '60',
+        target: '90',
+        unit: '%',
         status: 'on-track'
       }
     ],
