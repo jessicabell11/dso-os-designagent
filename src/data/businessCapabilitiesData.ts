@@ -5623,7 +5623,7 @@ export const level1CoreCapabilities: BusinessCapabilityHierarchy[] = [
     category: 'core',
     domain: 'Supply Chain',
     description: 'Capabilities related to supply chain resource planning and alignment',
-    children: []
+    children: level2SupplyChainCapabilities
   }
 ];
 
