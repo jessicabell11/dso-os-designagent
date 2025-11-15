@@ -112,24 +112,31 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Streamline the technology portfolio by eliminating redundancies and simplifying integrations to reduce maintenance costs and complexity.',
     metrics: [
       {
-        name: 'Technology stack reduction',
-        current: '0',
-        target: '25',
+        name: '% Golden State',
+        current: '30',
+        target: '80',
         unit: '%',
         status: 'on-track'
       },
       {
-        name: 'Maintenance cost reduction',
-        current: '0',
-        target: '30',
-        unit: '%',
-        status: 'on-track'
-      },
-      {
-        name: 'Integration complexity score',
-        current: '75',
-        target: '40',
+        name: 'Architectural Integrity Index',
+        current: '45',
+        target: '90',
         unit: 'score',
+        status: 'on-track'
+      },
+      {
+        name: 'Delivery Process Automated',
+        current: '25',
+        target: '95',
+        unit: '%',
+        status: 'on-track'
+      },
+      {
+        name: 'Self Service Developed',
+        current: '15',
+        target: '85',
+        unit: '%',
         status: 'on-track'
       }
     ],
