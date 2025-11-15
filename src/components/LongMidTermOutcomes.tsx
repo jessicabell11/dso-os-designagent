@@ -75,23 +75,16 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Develop platform capabilities that emphasize modularity, reusability, and scalability to improve overall system quality and operational efficiency.',
     metrics: [
       {
-        name: 'Component reuse rate',
-        current: '25',
-        target: '75',
-        unit: '%',
+        name: 'Mean Time to Recover',
+        current: '180',
+        target: '30',
+        unit: 'minutes',
         status: 'on-track'
       },
       {
-        name: 'System reliability',
-        current: '99.5',
-        target: '99.95',
-        unit: '%',
-        status: 'on-track'
-      },
-      {
-        name: 'Integration efficiency',
-        current: '40',
-        target: '85',
+        name: 'Change Failure Rate',
+        current: '15',
+        target: '5',
         unit: '%',
         status: 'on-track'
       }
