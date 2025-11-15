@@ -148,23 +148,16 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Invest in developing engineering capabilities and communities of practice to enhance technical excellence and team productivity.',
     metrics: [
       {
-        name: 'Engineering productivity',
-        current: '0',
-        target: '10',
-        unit: '% increase',
+        name: 'Engineer Satisfaction Score',
+        current: '3.2',
+        target: '4.5',
+        unit: 'out of 5',
         status: 'on-track'
       },
       {
-        name: 'Technical community engagement',
-        current: '30',
-        target: '80',
-        unit: '%',
-        status: 'on-track'
-      },
-      {
-        name: 'Skill development completion',
-        current: '45',
-        target: '90',
+        name: 'DSO Adoption',
+        current: '25',
+        target: '85',
         unit: '%',
         status: 'on-track'
       }
