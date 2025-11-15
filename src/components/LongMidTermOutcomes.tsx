@@ -53,17 +53,17 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Transform IT operations to embrace Digital Service Organization principles, significantly reducing delivery timelines and improving responsiveness.',
     metrics: [
       {
-        name: 'Time to market reduction',
-        current: '10',
-        target: '40',
-        unit: '%',
+        name: 'Lead Time for Changes',
+        current: '14',
+        target: '3',
+        unit: 'days',
         status: 'on-track'
       },
       {
-        name: 'DSO principles adoption',
-        current: '30',
-        target: '95',
-        unit: '%',
+        name: 'Deployment Frequency',
+        current: '2',
+        target: '20',
+        unit: 'per month',
         status: 'on-track'
       }
     ],
