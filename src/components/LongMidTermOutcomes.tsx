@@ -97,16 +97,9 @@ const standardLongTermOutcomes: Outcome[] = [
     description: 'Restructure IT operations and processes to achieve significant cost savings while maintaining or improving service quality.',
     metrics: [
       {
-        name: 'Operational cost reduction',
-        current: '5',
+        name: 'Cost-Driver Optimization',
+        current: '0',
         target: '15',
-        unit: '%',
-        status: 'on-track'
-      },
-      {
-        name: 'Resource utilization',
-        current: '70',
-        target: '90',
         unit: '%',
         status: 'on-track'
       }
